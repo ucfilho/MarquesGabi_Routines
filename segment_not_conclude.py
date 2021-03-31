@@ -120,4 +120,4 @@ def Segmenta(img):
 
     
 
-    return(img28_all)
+    return(img28_top)
