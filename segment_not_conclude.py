@@ -46,7 +46,7 @@ def Segmenta(img):
 
     a=0
     b=1200
-    c=100
+    c=10
     d=200
 
     ww=[]
@@ -56,7 +56,7 @@ def Segmenta(img):
     for i in range(Num):
       x=randint(a, b)
       y=randint(a, b)
-      Width=randint(a, d)
+      Width=randint(c, d)
       img_1st=np.zeros((Width,Width)).astype(np.int64)
 
       for k in range(Width):
