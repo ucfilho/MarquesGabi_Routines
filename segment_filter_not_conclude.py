@@ -50,10 +50,12 @@ def Segmenta(img):
     d=200
 
     ww=[]
+    ii = 0
     label=[]
     SizeWidth=[]  
 
-    for i in range(Num):
+    while ( ii<Num):
+      ii = ii +1
       x=randint(a, b)
       y=randint(a, b)
       Width=randint(c, d)
