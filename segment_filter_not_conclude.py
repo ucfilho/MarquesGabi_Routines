@@ -46,8 +46,8 @@ def Segmenta(img):
 
     a=0
     b=1200
-    c=30
-    d=200
+    c=50
+    d=300
 
     ww=[]
     ii = 0
