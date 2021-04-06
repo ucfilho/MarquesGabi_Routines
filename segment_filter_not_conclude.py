@@ -56,8 +56,10 @@ def Segmenta(img):
 
     while ( ii<Num):
       
-      x=randint(a, b)
-      y=randint(a, b)
+      x = int(a +(b-a)*np.random.rand(1))
+      y = int(a +(b-a)*np.random.rand(1))
+      #x=randint(a, b)
+      #y=randint(a, b)
       Width=randint(c, d)
       img_1st=np.zeros((Width,Width)).astype(np.int64)
 
