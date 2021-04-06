@@ -55,7 +55,7 @@ def Segmenta(img):
     SizeWidth=[]  
 
     while ( ii<Num):
-      ii = ii +1
+      
       x=randint(a, b)
       y=randint(a, b)
       Width=randint(c, d)
@@ -74,13 +74,27 @@ def Segmenta(img):
             y=Size-Width
 
           img_1st[k,j]=np.copy(img[k+y,j+x])
+        
+      soma =0
+      for kk in range(Width):
+        for jj in range(Width):
+            soma = soma + img[kk,jj]
+      
+      valor = soma/(255*Width*Width)
+      if (valor> 0.92):
+        filtro ='bad'
+      else:
+        filtro ='ok'
+            
+      if(filtro =='ok'):
+        ii = ii +1
+        ww.append(img_1st)
+        SizeWidth.append(Width)
+        nome = "W=" + str(Width)+" x="+str(x)+" y="+str(y)
+        label.append(nome)
+      # end of while
 
-      ww.append(img_1st)
-      SizeWidth.append(Width)
-      nome = "W=" + str(Width)+" x="+str(x)+" y="+str(y)
-      label.append(nome)
-
-    #2nd top
+    #2nd top: convert image in 28x28 PS: while is conclued before this line
     
     Size=28
     img28_all=[]
@@ -106,7 +120,7 @@ def Segmenta(img):
     
 
 
-    # 5th top
+    # 5th top : each image in one line
     
     img28_ravel_all=[]
     for i in range(Num):
