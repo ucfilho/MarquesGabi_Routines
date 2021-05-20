@@ -15,7 +15,8 @@ import Go2Mahotas
 
 # Segmentation: start here......
 
-def Segmenta(img):
+def Segmenta(img,c,d):
+    # c, d : the parameters are to select the segment size 
     #Start to use the big image
     img_ver=img.copy()
     Size=1200 # tamanho da foto
@@ -29,8 +30,7 @@ def Segmenta(img):
 
     a=0
     b=1200
-    c=10
-    d=1000
+
 
     ww=[]
     ii = 0
