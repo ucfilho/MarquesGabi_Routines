@@ -23,7 +23,7 @@ def PSDArea(df_size):
     img_new = img.copy()
     
     img28=cv2.resize(img,(Size,Size), interpolation = cv2.INTER_AREA)
-    Foto=np.array(img28).reshape(28,28)
+    Foto=np.array(img28).reshape(Size,Size)
     
     '''
     for i in range(28):
