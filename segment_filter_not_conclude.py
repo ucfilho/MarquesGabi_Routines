@@ -16,9 +16,9 @@ import re
 from sklearn.model_selection import train_test_split
 import skimage
 import pandas as pd
-import mahotas
-import mahotas.features.texture as mht
-import mahotas.features
+#import mahotas
+#import mahotas.features.texture as mht
+#import mahotas.features
 
 # Commented out IPython magic to ensure Python compatibility.
 #!git clone https://github.com/ucfilho/marquesgabi_fev_2020 #clonar do Github
