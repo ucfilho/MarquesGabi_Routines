@@ -24,8 +24,8 @@ import pandas as pd
 #!git clone https://github.com/ucfilho/marquesgabi_fev_2020 #clonar do Github
 #%cd marquesgabi_fev_2020
 
-import Go2BlackWhite
-import Go2Mahotas
+#import Go2BlackWhite
+#import Go2Mahotas
 
 
 
