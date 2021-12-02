@@ -59,9 +59,13 @@ def Segmenta(img):
       for kk in range(Width):
         for jj in range(Width):
             soma = soma + img[kk,jj]
+            
+      for kk in range(Width):
+        for jj in range(Width):
+            soma = soma + img[kk,jj]    
       
       valor = soma/(255*Width*Width)
-      if (valor> 0.50):
+      if (valor> 0.60):
         filtro ='bad'
       else:
         filtro ='ok'
